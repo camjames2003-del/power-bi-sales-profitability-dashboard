@@ -1,0 +1,18 @@
+Dim_Date =
+VAR MinYear = 2013
+VAR MaxYear = 2014
+RETURN
+ADDCOLUMNS(
+    CALENDAR(
+        DATE(MinYear, 1, 1),
+        DATE(MaxYear, 12, 31)
+    ),
+    "DateKey", INT(FORMAT([Date], "YYYYMMDD")),
+    "Year", YEAR([Date]),
+    "Month Number", MONTH([Date]),
+    "Month", FORMAT([Date], "mmm"),
+    "Month Year", FORMAT([Date], "mmm yyyy"),
+    "Quarter", "Q" & FORMAT([Date], "Q"),
+    "Year-Quarter", FORMAT([Date], "yyyy") & "-Q" & FORMAT([Date], "Q"),
+    "Year-Month Sort", INT(FORMAT([Date], "YYYYMM"))
+)
