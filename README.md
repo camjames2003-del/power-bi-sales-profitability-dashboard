@@ -87,4 +87,3 @@ https://learn.microsoft.com/en-us/power-bi/create-reports/sample-financial-downl
 - `powerbi/` — Power BI project file
 - `screenshots/` — dashboard screenshots
 - `dax/` — DAX scripts used in the project
-- `data/` — dataset source information
